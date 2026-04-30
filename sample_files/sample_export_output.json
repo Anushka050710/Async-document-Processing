@@ -1,0 +1,33 @@
+{
+  "id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+  "original_filename": "sample_report.txt",
+  "file_type": "txt",
+  "file_size": 1024,
+  "status": "finalized",
+  "created_at": "2024-01-15T10:30:00",
+  "completed_at": "2024-01-15T10:30:08",
+  "extracted_data": {
+    "title": "Sample Report",
+    "category": "Plain Text",
+    "summary": "Q1 2024 Financial Report\n========================\n\nExecutive Summary\n-----------------\nThis report covers the financial performance of DocFlow Inc. for the first quarter of 2024…",
+    "keywords": ["revenue", "processing", "enterprise", "financial", "quarterly", "platform", "growth"],
+    "page_count": null,
+    "char_count": 1247,
+    "file_size_bytes": 1024,
+    "file_type": "txt",
+    "original_filename": "sample_report.txt",
+    "processed_at": "2024-01-15T10:30:07"
+  },
+  "reviewed_data": {
+    "title": "Q1 2024 Financial Report",
+    "category": "Financial Report",
+    "summary": "DocFlow Inc. Q1 2024 report showing 23% YoY revenue growth to $4.2M with 1,240 customers.",
+    "keywords": ["revenue", "growth", "enterprise", "Q1", "financial", "DocFlow"],
+    "page_count": null,
+    "char_count": 1247,
+    "file_size_bytes": 1024,
+    "file_type": "txt",
+    "original_filename": "sample_report.txt",
+    "processed_at": "2024-01-15T10:30:07"
+  }
+}

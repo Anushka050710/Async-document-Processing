@@ -1,0 +1,22 @@
+{
+  "project": "DocFlow",
+  "version": "1.0.0",
+  "description": "Async document processing workflow system",
+  "features": [
+    "Multi-file upload",
+    "Background processing with Celery",
+    "Real-time progress via Redis Pub/Sub",
+    "Document review and editing",
+    "JSON and CSV export"
+  ],
+  "tech_stack": {
+    "frontend": "Next.js 14 with TypeScript",
+    "backend": "FastAPI with Python 3.11",
+    "database": "PostgreSQL 15",
+    "queue": "Celery with Redis broker",
+    "cache": "Redis for Pub/Sub and status caching"
+  },
+  "status": "production-ready",
+  "author": "DocFlow Team",
+  "created_at": "2024-01-15"
+}
