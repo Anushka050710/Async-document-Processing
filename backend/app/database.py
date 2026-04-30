@@ -11,8 +11,9 @@ async_engine = create_async_engine(
     settings.database_url,
     echo=settings.debug,
     pool_pre_ping=True,
-    pool_size=10,
-    max_overflow=20,
+    pool_size=5,
+    max_overflow=10,
+    connect_args={"ssl": "require"} if "render.com" in settings.database_url or "railway" in settings.database_url else {},
 )
 
 AsyncSessionLocal = async_sessionmaker(
@@ -28,6 +29,7 @@ sync_engine = create_engine(
     pool_pre_ping=True,
     pool_size=5,
     max_overflow=10,
+    connect_args={"sslmode": "require"} if "render.com" in settings.sync_database_url or "railway" in settings.sync_database_url else {},
 )
 
 SyncSessionLocal = sessionmaker(
