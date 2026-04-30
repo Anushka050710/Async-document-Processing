@@ -23,7 +23,9 @@ celery_app.conf.update(
         "app.worker.tasks.process_document": {"queue": "documents"},
     },
     task_default_queue="documents",
-    # Retry settings
     task_max_retries=3,
     task_default_retry_delay=5,
+    # SSL support for Upstash rediss:// URLs
+    broker_use_ssl={"ssl_cert_reqs": None},
+    redis_backend_use_ssl={"ssl_cert_reqs": None},
 )

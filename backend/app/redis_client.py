@@ -6,7 +6,11 @@ from app.config import get_settings
 settings = get_settings()
 
 # Synchronous Redis client (used by Celery workers and SSE)
-redis_client = redis.from_url(settings.redis_url, decode_responses=True)
+redis_client = redis.from_url(
+    settings.redis_url,
+    decode_responses=True,
+    ssl_cert_reqs=None,  # Required for Upstash rediss:// URLs
+)
 
 
 def get_channel_name(document_id: str) -> str:
