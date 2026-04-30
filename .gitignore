@@ -8,7 +8,7 @@ venv/
 dist/
 build/
 .env
-!backend/.env
+!backend/.env.example
 
 # Node
 node_modules/
@@ -30,7 +30,3 @@ Thumbs.db
 # IDE
 .vscode/
 .idea/
-
-# Docker (not used in local setup)
-Dockerfile
-docker-compose.yml
